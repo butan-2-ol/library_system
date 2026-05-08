@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library system.</title>
+    <link rel="stylesheet" href="library.css">
+</head>
+<body>
+    <header>
+        <h1>A&G</h1>
+        <nav>
+            <ul>
+                <li><a href="check-in.html">Student check-in</a></li>
+                <li><a href="check-out.html">Staff check-out</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Staff Credentials</h2>
+        <form id="staff-form">
+            <div>
+                <label>Staff Name</label>
+                <input type="text" placeholder="Enter your full name" required id="staff-name">
+            </div>
+
+            <div>
+                <label>Staff ID</label>
+                <input type="number" placeholder="Enter your Staff ID" required id="staff-id">
+            </div>
+
+            <div>
+                <label>Enter student Token </label>
+                <div style="display: flex; gap: 10px;">
+                    <input type="number" id="tokenInput" placeholder="Enter token number" required>
+                    <button type="button" id="fetchBtn" style="width: auto;">Fetch Items</button>
+                </div>
+            </div>
+            
+            <div style="display: flex; flex-direction: column; height: auto; width: auto;">
+                <label>students Item details</label>
+
+                <!-- Area to show items left -->
+                <p  id="itemDisplay">
+
+                </p>
+                    
+                
+            </div>
+
+            <button id="confirmBtn" type="submit">Confirm Check-out</button>
+            
+
+        </form>
+    </main>
+
+
+    <audio id="alarmSound" src="faaah.mp3"></audio>
+    <footer>
+        <p>A&G - @2026</p>
+    </footer>
+    
+
+    <script src="checkout_script.js"></script>
+</body>
+</html>

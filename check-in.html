@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library system.</title>
+    <link rel="stylesheet" href="library.css">
+</head>
+<body>
+    <header>
+        <h1>A&G</h1>
+        <nav>
+            <ul>
+                <li><a href="check-in.html">Student check-in</a></li>
+                <li><a href="check-out.html">Staff check-out</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Student Credentials</h2>
+        <form id="check-in">
+            <div>
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your full name" id="name"  required>
+            </div>
+
+            <div>
+                <label>Index Number</label>
+                <input type="number" placeholder="Enter your index number" id="id-number" required>
+            </div>
+
+            <div>
+                <label>Phone Number</label>
+                <input type="tel" placeholder="Enter phone number" id="phone" required>
+            </div>
+            
+            <div>
+                <label>Item details</label>
+                <textarea placeholder="e.g Blue bag pack, HP laptop etc." id="details"></textarea>
+            </div>
+
+            <div id="message">
+
+            </div>
+
+            <div id="submit">
+                <button type="submit">Generate Token</button>
+            </div>
+
+            <div>
+                <p>Your Check-out Token:</p>
+                <p id="tokenValue"></p>
+                <p>Please provide this to the librarian when leaving the Library.</p>
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>A&G - @2026</p>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
